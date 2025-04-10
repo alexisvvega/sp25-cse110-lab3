@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meeting Minutes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div>
+                    <!-- Title -->
+                    <h1><span>CSE 110</span> Project Meetup Meeting</h1>
+
+                    <!-- Subtitle for Meeting Section-->
+                    <h2>Organizing for management assignment</h2>
+                </div>
+                <div>
+                    <!-- Subtitle for Date -->
+                    <p>Date: 04-09-2025</p>
+                </div>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main>
+            <!-- Attendance List -->
+            <h3><i class="fas fa-users"></i>Attendance List</h3>
+                <ul>
+                    <li>Alexis Vega</li>
+                    <li>Ryan McLoughlin</li>
+                    <li>Vanessa Ramirez</li>
+                    <li>Melody White</li>
+                    <li>John Duong</li>
+                </ul>
+
+            <!-- Agenda of what will be covered -->
+            <h3><i class="fa-solid fa-calendar"></i>Agenda</h3>
+                <ol>
+                    <li>Introductions</li>
+                    <li>Ice Breaker</li>
+                    <li>Project Updates</li>
+                    <li>Discussion of Issues</li>
+                    <li>Next Steps</li>
+                    <li>Wrap Up</li>
+                    <li>Fill out Feedback Form</li>
+                </ol>
+
+            <!-- Agenda of unfinished from last meeting -->
+            <h3><i class="fa-solid fa-briefcase"></i>Unfinished Business</h3>
+                <ul>
+                    <li>Finalize the team name</li>
+                    <li>Decide on the preferred tech stack for the project</li>
+                    <li>Complete team member role assignments</li>
+                    <li>Submit meeting availability for recurring team syncs</li>
+                </ul>
+
+                
+
+            <!-- New Buisness that needs to be talked about -->
+            <h3><i class="fa-solid fa-business-time"></i>New Business</h3>
+                <ul>
+                    <li>Establish a shared <b>GitHub</b> repository and set up permissions</li>
+                    <li>Discuss initial ideas for app design and core features</li>
+                    <li>Set up <b>Figma</b> and <b>Docs</b> for task management</li>
+                    <li>Determine timeline for completing the first prototype</li>
+                    <li>Finish the SETUP.md file by <em>next team meeting</em></li>
+                </ul>
+            <!-- Anyones Comments Questions or Concerns -->
+            <h3><i class="fa-solid fa-clipboard-question"></i>Comments, Questions, Concerns</h3>
+            <details>
+                <summary><strong>Make sure to check the comments, questions and concerns brought up</strong></summary>
+                    <ul>
+                        <li>“Can we confirm deadlines for each assignment so we can work ahead?” - Alexis</li>
+                        <li>“Will we be doing peer evaluations or team check-ins?” - Ryan</li>
+                        <li>“I'm still a little confused about the difference between <i>low- and high-fidelity wireframes</i>.” - Vanessa</li>
+                        <li>“Do we need to include testing documentation in the next submission?” - John</li>
+                    </ul>
+            </details>
+                
+
+            <!-- Pictures of any Diagrams/things presented -->
+            <h3><i class="fa-solid fa-chalkboard-user"></i>Presented Materials</h3>
+                <img src="meetingDiagram.jpeg" alt="Diagram from the meeting" width= "30%">
+                <!-- Video Recording of the Meeting -->
+                <video controls width= "30%"  >
+                    <source src="diagram-video.mp4" type="video/mp4">
+                    Your browser does not support the video element.         
+                </video>
+                <h4>Links we went over:</h4>
+                    <a href="https://www.gleek.io/blog/diagram-for-developers">Diagrams for developers</a>
+                    <a href="https://medium.com/@jonathanbluks/what-makes-a-good-developer-80330712e22">What makes a good developer</a>
+                    <a href="https://www.bethel.edu/undergrad/academics/math-cs/majors-minors/software-project-management">Project Management</a>
+
+            <!-- Feedback Form -->
+            <section>
+                <h4>Feedback Form</h4>
+                <p>Please fill out the form below to provide your feedback.</p>
+                <form>
+                    <fieldset>
+                        <legend>Survey:</legend>
+                        <fieldset>
+                            <legend>Personalia:</legend>
+                            <!-- Name -->
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your name here" required><br><br>
+                            <!-- Birthdate -->
+                            <label for="birthdate">Birthdate:</label>
+                            <input type="date" id="birthdate" name="birthdate"><br><br>
+                            <!-- Email -->
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your email here"><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Feedback:</legend>
+                            <!-- Feedback -->
+                            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Your feedback here"></textarea><br><br>
+                            <!-- Rating on a scale -->
+                            <label for="rating">Rating:</label>
+                            <select id="rating" name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select><br><br> 
+                            <!-- Rating Suggestion -->
+                            <label for="rating-suggestion">How would you describe the meeting?</label>
+                            <input list="rating-suggestions" id="rating-suggestion" name="rating-suggestion" placeholder="Choose or type...">
+                            <datalist id="rating-suggestions">
+                                <option value="Excellent">
+                                <option value="Good">
+                                <option value="Average">
+                                <option value="Poor">
+                            </datalist><br><br>  
+
+                            <p>Which topics were useful? (Check all that apply)</p>
+                            <input type="checkbox" id="topic1" name="topic" value="HTML">
+                            <label for="topic1">Github breakdown</label><br>
+                            <input type="checkbox" id="topic2" name="topic" value="CSS">
+                            <label for="topic2">Workflow management</label><br>
+                            <input type="checkbox" id="topic3" name="topic" value="Forms">
+                            <label for="topic3">Figma workshop</label><br><br>
+
+                            <p>Would you attend another meeting?</p>
+                            <input type="radio" id="yes" name="attend-again" value="yes">
+                            <label for="yes">Yes</label><br>
+                            <input type="radio" id="no" name="attend-again" value="no">
+                            <label for="no">No</label><br><br>
+                        </fieldset>    
+                        <!-- Submit Button -->
+                        <button type="submit">Submit</button>  
+                    </fieldset>        
+                </form>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <!-- Audio Recording the Meeting -->
+            <audio controls>
+                <source src="meeting-audio-recording.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>&copy; 2025 Alexis Vega. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>
