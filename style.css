@@ -5,6 +5,7 @@
 :root {
     --header-bg: rgb(87, 20, 20);
     --header-text: white;
+    --section-border: color(display-p3 0.4 0.1 0.15);
     --accent-border: #4a90e2;
     --font-primary: 'DM Sans', sans-serif;
 }
@@ -32,4 +33,118 @@ header {
 .titles h1:hover { 
     transform: scale(1.05);
     transition: all 0.3s ease;
+}
+
+/*Main Section Styling*/
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2em;
+    padding: 2em;
+    max-width: 75rem;
+    margin: auto;
+}
+.main-section {
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border-width: 3px;  
+    border-style: solid;                    
+    border-color: var(--section-border, #561414);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+.main-section:hover {
+    transform: translateY(-5px);
+}
+.main-section h3 {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+    color: color-mix(in srgb, #561414 85%, white 15%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Responsiveness */
+/* Phone: ≤ 600px */
+@media (max-width: 600px) {
+    header {
+        padding: 1rem;
+    }
+
+    .titles h1 {
+        font-size: 1.75rem;
+    }
+
+    .titles h2 {
+        font-size: 1.1rem;
+    }
+
+    .date p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .main-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .main-section {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .main-section h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Tablet: 601px to 900px */
+@media (max-width: 900px) and (min-width: 601px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    .titles h1 {
+        font-size: 2.2rem;
+    }
+
+    .titles h2 {
+        font-size: 1.25rem;
+    }
+
+    .date p {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .main-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .main-section {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .main-section h3 {
+        font-size: 1.4rem;
+    }
 }
