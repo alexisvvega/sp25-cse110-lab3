@@ -67,7 +67,55 @@ header {
     gap: 0.5rem;
 }
 
-/* Responsiveness */
+/*Comments and Links*/
+#comments-section,
+#materials-section {
+    padding-top: 0.5rem;   
+    padding-bottom: 0.5rem;
+    max-width: 900px;
+    margin-left: 9em;
+    margin-right: 2em; 
+    line-height: 1;
+}
+#comments-section h3,
+#materials-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: color-mix(in srgb, #561414 85%, white 15%);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+#comments-section summary {
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+#comments-section ul > li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.75cm;
+    line-height: 1.5;
+}
+
+#materials-section video + h4 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    color: #561414;
+}
+
+#materials-section a {
+    display: block;
+    margin-bottom: 1rem; 
+    font-weight: 500;
+    color: #561414;
+    text-decoration: underline;
+}
+#materials-section a:hover {
+    color: #ad1919; 
+}
+
 /* Phone: ≤ 600px */
 @media (max-width: 600px) {
     header {
