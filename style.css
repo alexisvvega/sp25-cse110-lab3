@@ -1,0 +1,35 @@
+/*Root Variables*/
+*{
+    font-family: var(--font-primary);
+}
+:root {
+    --header-bg: rgb(87, 20, 20);
+    --header-text: white;
+    --accent-border: #4a90e2;
+    --font-primary: 'DM Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9e9e9;
+}
+
+/*Header Styling*/
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 20px;
+    text-align: center;
+}
+.date {
+    align-self: flex-start;
+    text-align: right;
+}
+.titles h1 {
+    font-size: 3rem;
+}
+.titles h1:hover { 
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
