@@ -116,6 +116,104 @@ header {
     color: #ad1919; 
 }
 
+/* Feedback Section */
+#feedback-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 10vh auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #561414;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  
+    h4 {
+      font-size: 1.8rem;
+      color: #561414;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    .form-subheader {
+      text-align: center;
+    }
+  
+    p {
+      margin-bottom: 1.25rem;
+    }
+  
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 1.5rem;
+      margin-bottom: 10mm;
+      border-radius: 8px;
+  
+      legend {
+        font-weight: bold;
+        color: #561414;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+      }
+  
+      label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: 500;
+        color: #333333;
+      }
+  
+      input,
+      select,
+      textarea {
+        width: 100%;
+        max-width: 90vw;
+        padding: 0.6rem;
+        margin-top: 0.4rem;
+        font-size: 1rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        background-color: #fdfdfd;
+        color: #111111;
+      }
+  
+      input[type="checkbox"],
+      input[type="radio"] {
+        width: auto;
+        margin-right: 0.6rem;
+      }
+  
+      .inline-option {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+        font-weight: 500;
+        color: #333333;
+        font-size: 1rem;
+      }
+    }
+  
+    button[type="submit"] {
+      background-color: #561414;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #7c1d1d;
+      }
+    }
+    &:has(textarea:focus) {
+        box-shadow: 0 0 0 4px rgba(252, 0, 0, 0.15);
+        border-color: #de0e0e;
+    }
+
+}  
+
 /* Phone: ≤ 600px */
 @media (max-width: 600px) {
     header {
@@ -155,8 +253,12 @@ header {
     .main-section h3 {
         font-size: 1.25rem;
     }
+    #comments-section,
+    #materials-section {
+        margin: 0 1rem;  /* or 1em, up to your spacing preference */
+        padding: 1rem 0;
+    }
 }
-
 /* Tablet: 601px to 900px */
 @media (max-width: 900px) and (min-width: 601px) {
     header {
