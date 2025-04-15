@@ -8,6 +8,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <style>
+            footer.meeting-footer p {
+                color: #901d1d;
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0;
+            }
+        </style>
     </head>
     <body>
 
@@ -17,13 +25,13 @@
                     <!-- Subtitle for Date -->
                     <p>Date: 04-09-2025</p>
                 </div>
-                <div class = "titles">
+                <section class = "titles">
                     <!-- Title -->
                     <h1><span style = "color: hsl(0, 4%, 56%);">CSE 110</span> Project Meetup Meeting</h1>
 
                     <!-- Subtitle for Meeting Section-->
                     <h2>Organizing for management assignment</h2>
-                </div>
+                </section>
             </nav>
         </header>
 
@@ -178,9 +186,7 @@
             </section>
         </main>
 
-        <hr>
-
-        <footer>
+        <footer class="meeting-footer">
             <!-- Audio Recording the Meeting -->
             <audio controls>
                 <source src="meeting-audio-recording.mp3" type="audio/mpeg">

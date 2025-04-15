@@ -22,6 +22,9 @@ header {
     color: var(--header-text);
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .date {
     align-self: flex-start;
@@ -45,6 +48,9 @@ header {
     margin: auto;
 }
 .main-section {
+    position: relative;
+    min-width: 170px;
+    height: 250px;
     background-color: #ffffff;
     padding: 1.5rem 2rem;
     border-radius: 12px;
@@ -95,6 +101,7 @@ header {
 
 #comments-section ul > li {
     padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin-bottom: 0.75cm;
     line-height: 1.5;
 }
@@ -117,6 +124,10 @@ header {
 }
 
 /* Feedback Section */
+#feedback-section h4 ~ p {
+    font-style: italic;
+    color: #7a1d1d;
+}
 #feedback-section {
     padding: 2rem;
     max-width: 800px;
@@ -206,6 +217,11 @@ header {
       &:hover {
         background-color: #7c1d1d;
       }
+      &:active {
+        background-color: #3c0f0f; 
+        transform: scale(0.97);    
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
     }
     &:has(textarea:focus) {
         box-shadow: 0 0 0 4px rgba(252, 0, 0, 0.15);
@@ -214,8 +230,24 @@ header {
 
 }  
 
+/* Footer */
+footer.meeting-footer {
+    background-color: #fdf6f6;
+    text-align: center;
+    padding: 2rem 1rem 2rem 1rem;     
+    margin: 0.1rem 0rem 0rem 0rem;  
+    border-top: 2px solid #561414;
+}
+
+footer.meeting-footer audio {
+    margin: 1rem 0 1rem 0; 
+}
+
 /* Phone: ≤ 600px */
 @media (max-width: 600px) {
+    #materials-section video {
+        display: none;
+    }
     header {
         padding: 1rem;
     }
